@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Dark Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <div class="app-container">
+
+        <div id="main-controls" class="view-section">
+            <div class="card-stack" id="cardStack">
+                
+            </div>
+
+            <div class="button-group">
+                <button id="upBtn" class="btn">Up</button>
+                <button id="addCardBtn" class="btn primary-btn">Add</button>
+                <button id="downBtn" class="btn">Down</button>
+                <button id="deleteBtn" class="btn delete-btn">Delete</button>
+            </div>
+        </div>
+        <div id="form-view" class="view-section hidden">
+            <h2>Create New Note</h2>
+            <form id="noteForm">
+                <div class="input-group">
+                    <label for="headingInput">Heading</label>
+                    <input type="text" id="headingInput" placeholder="Enter heading..." required autocomplete="off">
+                </div>
+
+                <div class="input-group">
+                    <label for="notesInput">Notes</label>
+                    <textarea id="notesInput" rows="4" placeholder="Write your note here..." required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn primary-btn">Save Note</button>
+                    <button type="button" id="closeBtn" class="btn close-btn">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
